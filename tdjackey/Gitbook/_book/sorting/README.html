@@ -1,0 +1,417 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Sorting | My Book</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    
+    <link rel="prev" href="../big_o_notation/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="3" data-basepath=".." data-revision="1421407784305">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="a_swift_tour/README.html">
+            
+                
+                    <a href="../a_swift_tour/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         A Swift Tour
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="big_o_notation/README.html">
+            
+                
+                    <a href="../big_o_notation/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Big O Notation
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="3" data-path="sorting/README.html">
+            
+                
+                    <a href="../sorting/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Sorting
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >My Book</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_575">
+                    
+                        <h1 id="">排序算法</h1>
+<p>在计算机科学与数学中，一个排序算法（Sorting algorithm）是一种能将一串数据依照特定排序方式进行排列的一种算法。最常用到的排序方式是数值顺序以及字典顺序。有效的排序算法在一些算法（例如搜索算法与合并算法）中是重要的，如此这些算法才能得到正确解答。排序算法也用在处理文字数据以及产生人类可读的输出结果。基本上，排序算法的输出必须遵守下列两个原则：</p>
+<ol>
+<li>输出结果为递增序列（递增是针对所需的排序顺序而言）</li>
+<li>输出结果是原输入的一种排列、或是重组</li>
+</ol>
+<h2 id="">例子</h2>
+<pre><code>//a simple array of unsorted integers
+var numberList : Array&lt;Int&gt; = [8, 2, 10, 9, 11, 1, 7, 3, 4]
+</code></pre><h3 id="">插入排序</h3>
+<p><strong>插入排序（Insertion Sort）</strong>是一种简单直观的排序算法。它的工作原理是通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。插入排序在实现上，通常采用in-place排序（即只需用到O(1)的额外空间的排序），因而在从后向前扫描过程中，需要反复把已排序元素逐步向后挪位，为最新元素提供插入空间。</p>
+<pre><code>
+//insertion sort - rank items by comparing each key in the list.
+func insertionSort() {
+    var x, y, key : Int
+    for (x = 0; x &lt; numberList.count; x++) {
+    //obtain a key to be evaluated
+        key = numberList[x]
+
+    //iterate backwards through the sorted portion
+    for (y = x; y &gt; -1; y--) {
+        if (key &lt; numberList[y]) {
+            //remove item from original position
+            numberList.removeAtIndex(y + 1)
+
+            //insert the number at the key position
+            numberList.insert(key, atIndex: y)
+        }
+    }//end for
+    } //end for
+} //end function
+</code></pre><h2 id="">冒泡排序</h2>
+<p><strong>冒泡排序（Bubble Sort）</strong>是一种简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。</p>
+<ul>
+<li>最差时间复杂度    O(n^2)</li>
+<li>最优时间复杂度    O(n)</li>
+<li>平均时间复杂度    O(n^2)</li>
+<li>最差空间复杂度    总共O(n)，需要辅助空间O(1)</li>
+</ul>
+<pre><code>/*
+    bubble sort algorithm - rank items from the lowest to highest by swapping
+    groups of two items from left to right. The highest item in the set will bubble up to the
+    right side of the set after the first iteration.
+    */
+
+    func bubbleSort(var numberList: Array&lt;Int&gt;) -&gt; Array&lt;Int&gt; {
+
+
+        //establish the iteration counters
+        var x, y, z, passes, key : Int
+
+
+        for (x = 0; x &lt; numberList.count; ++x) {
+
+            //outer loop is maintained to track how many iterations to pass through the list
+            passes = (numberList.count - 1) - x;
+
+
+                for (y = 0; y &lt; passes; y++) {
+
+                    //obtain the key item to sort
+                    key = numberList[y]
+
+
+                    println(&quot;comparing \(key) and \(numberList[y + 1])&quot;)
+
+
+                        if (key &gt; numberList[y + 1]) {
+
+                            //pull out the value to be swapped
+                            z = numberList[y + 1]
+
+
+                            //write the key where the previous value was placed
+                            numberList[y + 1] = key
+
+
+                            //place the pulled value in the previous position
+                            numberList[y] = z
+
+
+
+                        } //end if
+
+
+                } //end for
+
+
+        } //end for
+
+        return numberList
+
+    } //end function
+</code></pre><h3 id="">快速排序</h3>
+<p><strong>快速排序</strong>是由东尼·霍尔所发展的一种排序算法。在平均状况下，排序 n 个项目要Ο(n log n)次比较。在最坏状况下则需要Ο(n2)次比较，但这种状况并不常见。事实上，快速排序通常明显比其他Ο(n log n) 算法更快，因为它的内部循环（inner loop）可以在大部分的架构上很有效率地被实现出来。</p>
+<ul>
+<li>最差时间复杂度    \Theta(n^2)</li>
+<li>最优时间复杂度    \Theta(n\log n)</li>
+<li>平均时间复杂度    \Theta(n\log n)</li>
+<li>最差空间复杂度    根据实现的方式不同而不同</li>
+</ul>
+<pre><code>
+        // Quick sort works by dividing and conquering
+        // Firstly it picks a pivot point then looks at all items in the observed array
+        // and moves values to the left or right of the pivot based on their value
+        // it works recursively so that either side will be eventually sorted back to the top
+
+        func quickSort(var hops:[Int]) -&gt; [Int] {
+
+            if (hops.count &lt;= 1) {
+                return hops
+            }
+
+            var pivot = hops.removeAtIndex(0)
+            var leftBucket:[Int] = []
+            var rightBucket:[Int] = []
+
+            (hops.count - 1).times { i in
+                if (hops[i] &lt;= pivot) {
+                    leftBucket.append(hops[i])
+                } else {
+                    rightBucket.append(hops[i])
+                }
+            }
+
+            var mergedArray:[Int] = []
+            mergedArray += quickSort(leftBucket)
+            mergedArray += [pivot]
+            mergedArray += quickSort(rightBucket)
+
+            return mergedArray
+        }
+</code></pre><h3 id="">归并排序</h3>
+<p><strong>归并排序（Merge sort）</strong>是创建在归并操作上的一种有效的排序算法。该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。</p>
+<ul>
+<li>最差时间复杂度    \Theta(n\log n)</li>
+<li>最优时间复杂度    \Theta(n)</li>
+<li>平均时间复杂度    \Theta(n\log n)</li>
+<li>最差空间复杂度    \Theta(n)</li>
+</ul>
+<pre><code>        // Merge sort works by breaking down each side and sorting as it comes back up
+        // Each left &amp; right side is sorted by using pointers as to which value should be included
+        // to sort, as each side is sorted as it comes back up the &quot;tree&quot; we can be sure that our pointers
+        // can be safely moved left to right whereby the values are increasing
+        func mergeSort(input:[Int]) -&gt; [Int] {
+
+            if (input.count &lt;= 1) {
+                return input
+            }
+
+            let mid = Int(floor(Double(input.count / 2)))
+            let left = Array(input[0..&lt;mid])
+            let right = Array(input[mid..&lt;input.count])
+
+            let leftSide = mergeSort(left)
+            let rightSide = mergeSort(right)
+
+            return sortForMergeSort(leftSide, right: rightSide)
+        }
+
+        func sortForMergeSort(left:[Int], right:[Int]) -&gt; [Int] {
+
+            var sortedArray:[Int] = []
+            var leftCount = 0
+            var rightCount = 0
+
+            (left.count + right.count).times { i in
+                if (leftCount &lt; left.count &amp;&amp; (rightCount &gt;= right.count || left[leftCount] &lt;= right[rightCount])) {
+                    sortedArray.append(left[leftCount++])
+                } else if (rightCount &lt; right.count &amp;&amp; (leftCount &gt;= left.count || right[rightCount] &lt; left[leftCount])) {
+                    sortedArray.append(right[rightCount++])
+                }
+            }
+
+            return sortedArray
+        }
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../big_o_notation/README.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Big O Notation"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

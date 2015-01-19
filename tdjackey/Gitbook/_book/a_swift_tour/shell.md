@@ -1,24 +1,9 @@
-# shell脚本编程
+# Shell
+## 什么是Shell脚本？
 
-## 什么是Shell脚本
-### 示例
 看个例子吧：
 
-```
-for ((i=0; i<10; i++)); do
-    echo i
-done
-
-
-for ((i=0; i<10; i++)); do
-    echo $i
-done
-```
-
-
-新建文件
-
-	#!/bin/sh
+    #!/bin/sh
 	cd ~
 	mkdir shell_tut
 	cd shell_tut
@@ -26,6 +11,7 @@ done
 	for ((i=0; i<10; i++)); do
 		touch test_$i.txt
 	done
+
 
 ### 示例解释
 
@@ -80,83 +66,13 @@ Bash是Bourne shell的替代品，属GNU Project，二进制文件路径通常�
 
 但在Mac OS上不是，/bin/sh和/bin/bash是两个不同的文件，尽管它们的大小只相差100字节左右:
 
-$ ls -l /bin/*sh
+	$ ls -l /bin/*sh
 	-r-xr-xr-x  1 root  wheel  1371648  6 Nov 16:52 /bin/bash
 	-rwxr-xr-x  2 root  wheel   772992  6 Nov 16:52 /bin/csh
 	-r-xr-xr-x  1 root  wheel  2180736  6 Nov 16:52 /bin/ksh
 	-r-xr-xr-x  1 root  wheel  1371712  6 Nov 16:52 /bin/sh
 	-rwxr-xr-x  2 root  wheel   772992  6 Nov 16:52 /bin/tcsh
 	-rwxr-xr-x  1 root  wheel  1103984  6 Nov 16:52 /bin/zsh
-
-
-## 变量
-### 定义变量
-定义变量时，变量名不加美元符号（$），如：
-
-	your_name="adog"
-
-注意，变量名和等号之间不能有空格，这可能和你熟悉的所有编程语言都不一样。
-
-### 使用变量
-使用一个定义过的变量，只要在变量名前面加美元符号即可，如：
-
-	your_name="adog"
-	echo $your_name
-	echo ${your_name}
-
-变量名外面的花括号是可选的，加不加都行，加花括号是为了帮助解释器识别变量的边界，比如下面这种情况：
-
-### 重定义变量
-已定义的变量，可以被重新定义，如：
-
-	your_name="qinjx"
-	echo $your_name
-
-	your_name="alibaba"
-	echo $your_name
-
-这样写是合法的，但注意，第二次赋值的时候不能写$your_name="alibaba"，使用变量的时候才加美元符。
-
-
-## 字符串
-字符串是shell编程中最常用最有用的数据类型（除了数字和字符串，也没啥其它类型好用了，哈哈），字符串可以用单引号，也可以用双引号，也可以不用引号。单双引号的区别跟PHP类似。
-
-### 单引号
-
-	str='this is a string'
-
-单引号字符串的限制：
-
-- 单引号里的任何字符都会原样输出，单引号字符串中的变量是无效的
-- 单引号字串中不能出现单引号（对单引号使用转义符后也不行）
-
-### 双引号
-
-	your_name='adog'
-	str="Hello, I know your are \"$your_name\"! \n"
-
-- 双引号里可以有变量
-- 双引号里可以出现转义字符
-
-### 字符串操作
-#### 拼接字符串
-
-	your_name="adog"
-	greeting="hello, "$your_nam
-	greeting_1="hello, ${your_name}"
-
-	echo $greeting $greeting_1
-
-#### 获取字符串长度：
-
-	string="abcd"
-	echo ${#string} #输出：4
-
-#### 提取子字符串
-
-	string="Dora is a great company"
-	echo ${string:1:4} #输出：ora
-
 
 
 #### 高级编程语言
@@ -179,25 +95,6 @@ $ ls -l /bin/*sh
 	chmod +x test.php
 	./test.php
 
-更改test.php的权限
-
-    man chown
-    man chmod
-
-    chmod a=rwx test.php
-
-- u 表示该档案的拥有者
-- g 表示与该档案的拥有者属于同一个群体(group)者
-- o 表示其他以外的人
-- a 表示这三者皆是
-
-
-    chown root test.php
-
-    chown: test.php: Operation not permitted
-
-    sudo!!
-
 ## 如何选择shell编程语言
 ### 熟悉 vs 陌生
 如果你已经掌握了一门编程语言（如PHP、Python、Java、JavaScript），建议你就直接使用这门语言编写脚本程序，虽然某些地方会有点啰嗦，但你能利用在这门语言领域里的经验（单元测试、单步调试、IDE、第三方类库）。
@@ -216,3 +113,4 @@ shell只定义了一个非常简单的编程语言，所以，如果你的脚本
 
 ### 环境兼容性
 如果你的脚本是提供给别的用户使用，使用sh或者bash，你的脚本将具有最好的环境兼容性，perl很早就是linux标配了，python这些年也成了一些linux发行版的标配，至于mac os，它默认安装了perl、python、ruby、php、java等主流编程语言。
+

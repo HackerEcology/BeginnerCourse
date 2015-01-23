@@ -15,10 +15,19 @@ sole 可以直接进入命令行界面。随后你仍然需要登录到一个账
 ###初识Command Line
 - 许多命令会花费一些时间来执行，然而这中间不会给出任何提示或者进度条。一般结束后会出现一个“用户名$”的标记。如果没有出现，那么说明最后一条命令正在执行。
 - 一条命令包括 Command Name、Options、Arguments、Extras 四个部分，但是后三个部分有时是可选的。Options 部分用-作为前导符。其中许多命令的 Options 部分只包含单个字母，这时可以合并。例如，ls -lA和ls -l -A是等效的。Arguments 部分用来细化这个命令或指定这个命令具体的实施对象，Extras 部分则用来进一步实现其他功能。
-- 举例：下列命令包含前三个部分，用于删除 Junk 这个程序。
+- 举例：以下新建了一个test.txt 并且删除了它
 
 ```
-$ rm -R /Applications/Junk.app
+$ ls
+$ cd
+$ ls
+$ cd Desktop
+$ mkdir folder
+$ cd folder
+$ touch test.txt
+$ rm test.txt
+$ cd ..
+$ rm -r folder
 ```
 
 - 如果你输入了一些错误的命令，系统会返回一些错误信息。但是系统却不会阻止你做傻事（例如删除整个用户文件夹）。

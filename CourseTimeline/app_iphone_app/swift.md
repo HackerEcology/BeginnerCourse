@@ -20,7 +20,6 @@
 10. 数组
 11. 字典
 12. 字符串操作
-13. 类型转换
 
 ### XCode Playground
 
@@ -166,9 +165,72 @@ while i < 5 {
 
 ### 数组
 
-有的时候我们
+有的时候我们有很多数据，比如如果你希望给facebook上的每个人发一封邮件，这些email地址需要储存在某个地方。如果每个email都使用变量，那么你需要10亿的不同名称的变量。但我们并不关心这些email的变量名，而是更加关心它们本身。在这种情况下，一个更好的数据结构是数组。一个数组可以储存很多数据，而不用给它们分别命名。例如这样定义一个数组:
+
+```
+var array = [1,2,3]
+
+arr[3]  //a newbie mistake
+
+arr[0]  //数组中的元素可以根据索引找到
+```
+
+在数组中加入一个元素:
+
+```
+array.append(4)
+```
+
+删除数组中的某一个元素，比如删除第二个元素:
+
+```
+arr.removeAtIndex(1)
+```
+
+删除某一个区间内的元素:
+
+```
+arr.removeRange(1...2)
+```
 
 ### 字典
+
+字典是一个"Key-Value"对的集合。与数组不同的是，key是一个自定义的用字符串的索引，value是这个索引所对应的值。
+
+```
+var dict = ["name": "Bob", "age": 34, "gender": "male"]
+
+dict["name"]
+```
+
+### 字符串操作
+
+字符串可以想像成一个字符的数组。
+
+```
+//定义两个数组并把它们连起来
+var str = "Hello, playground"
+var anotherStr = "Eric"
+var thirdStr = str + " " + anotherStr
+
+//遍历一个数组
+for character in str {
+    println(character)
+}
+```
+
+子字符串:一个字符串中的一段
+
+```
+//使用NSString的方法
+var newString = "Test String" as NSString
+var subString = newString.substringToIndex(3)
+
+//类型转换
+var anotherSubString = (str as NSString).substringToIndex(3)
+
+//如何取字符串的一段？
+```
 
 
 

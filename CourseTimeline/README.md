@@ -49,7 +49,7 @@ TopHacker Hacker Education课程团队设计的Beginner Course的总体目标是
 | 课时        | 内容           | Tutor  |
 | ------------- |:-------------:| -----:|
 | 1      | 基本数据结构（Big O, Linked List, Stack） | 龚杰 |
-| 2      | 递归      |   $12 |
+| 2      | 递归      |   龚杰 |
 | 3 | Relax: SpriteKit和一个简单的游戏: 旋转飞机      |    徐琛 |
 | 4 | 基本算法（sorting），复杂度      |    龚杰 |
 
@@ -65,7 +65,7 @@ TopHacker Hacker Education课程团队设计的Beginner Course的总体目标是
 | ------------- |:-------------:| -----:|
 | 1      | Swift面向对象的编程，OOP基本 | 龚杰 |
 | 2      | 封装，继承，多型      |   龚杰 |
-| 3 | Apple的打飞机游戏      |    徐琛 |
+| 3 | 游戏:保卫地球      |    徐琛 |
 | 4 | TableView和TodoList App      |    徐琛 |
 
 作业1: 面向对象编程的练习题
@@ -128,3 +128,5 @@ Office Hour:
 Reference & Recommended Reading:
 
 TBD
+
+

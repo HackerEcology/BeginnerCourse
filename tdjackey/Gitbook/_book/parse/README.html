@@ -31,7 +31,7 @@
 
 
         
-    <div class="book"  data-level="8" data-basepath=".." data-revision="1422083809576">
+    <div class="book"  data-level="8" data-basepath=".." data-revision="1422510396456">
     
 
 <div class="book-summary">
@@ -387,11 +387,37 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_107">
+                    <section class="normal" id="section-gitbook_214">
                     
                         <h1 id="parse">Parse</h1>
-<p>后端服务</p>
-
+<h2 id="">简介</h2>
+<p>Parse 平台为移动应用程序提供完整的后台解决方案。</p>
+<h3 id="appparse">连接你的APP到Parse上</h3>
+<p>下载parse提供的SDK</p>
+<p>找到AppDelegate.swift</p>
+<pre><code>// Uncomment and fill in with your Parse credentials:
+        Parse.setApplicationId(&quot;0iH86ncChuoaVD2tgRyUt1vGRKcmAvichG0C46dq&quot;, clientKey: &quot;KzDlQbGDr7kDzZbSEQ08rPFpg1dK0jJOhNu7Oaud&quot;)
+</code></pre><p>保存对象</p>
+<p>假如您想要将上述 GameScore 保存到 Parse 云中。保存接口与 NSMutableDictionary 类似，多了 saveInBackground 方法：</p>
+<pre><code>var gameScore = PFObject(className:&quot;GameScore&quot;)
+gameScore[&quot;score&quot;] = 1337
+gameScore[&quot;playerName&quot;] = &quot;Sean Plott&quot;
+gameScore[&quot;cheatMode&quot;] = false
+gameScore.saveInBackground()
+</code></pre><p>注册用户</p>
+<pre><code>
+var object = PFUser()
+object.username = &quot;tdjackey&quot;
+object.password = &quot;123&quot;
+object.signUpInBackgroundWithBlock { (Bool ifSuccess, NSError error) -&gt; Void in
+    if error != nil{
+        println(&quot;registration error&quot;)
+        //NSString errorString = &quot;registration error&quot;
+    }else{
+        println(&quot;registration successful.&quot;)
+    }
+}
+</code></pre>
                     
                     </section>
                 

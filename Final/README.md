@@ -38,7 +38,7 @@ TopHacker Hacker Education课程团队设计的Beginner Course的总体目标是
 | 4 | Shell（基本命令，shell script，操作系统概念，最简单的游戏: 俄罗斯轮盘赌 | 龚杰|
 | 5 | Git & GitHub, 提交作业 | 龚杰，张剑南 |
 
-作业: 基本编程语言联系，判断素数app
+作业: 基本编程语言练习，判断素数app
 
 挑战: 制作一个带UI的TicTacToe游戏，实现两人对战和记分
 

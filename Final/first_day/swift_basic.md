@@ -86,7 +86,7 @@ var explicit_int:Int = 5
 
 那为什么刚才定义变量的时候没有指定类型？因为Swift的编译器（将Swift程序转换成计算机可以执行程序的程序）会
 
-### 隐式变量和显式变量
+### Optional Type
 
 隐式变量和显式变量是Swift的特别特性。为了搞清楚这个特性，我们首先做几个实验。
 
@@ -102,11 +102,43 @@ var a
 var a:Int!
 ```
 
-你会看到
+在Swift中，有一种类型叫做Optional类型。以下是Optional类型的定义::
+
+```
+enum Optional<T> {
+    case None
+    case Some(T)
+}
+```
+
+这指代一个类型为T的变量或对象(复杂一些的变量)可能是有值的或是空值(nil)。
+
+例如，如果按以下方式定义一个变量Optional变量x，值为42:
+
+```
+var x:Int? = 42
+```
+
+如果你用println输出x会看到"Optional(42)"，如果你直接在Playground中显示x会看到{Some 42}。
+
+![day1_Basic_Wrap](http://7u2ql1.com1.z0.glb.clouddn.com/beginner_wrapvsunwrap.png)
+picture reference: http://lithium3141.com/blog/2014/06/19/learning-swift-optional-types/
+
+这里，42被"包住了"，如果要取出42的值，需要"Unwrap"，Unwrap的方法是用!
+
+```
+println(x!)
+```
 
 ### 实现逻辑的必备要素
 
-条件和循环是实现一个程序逻辑的必备要素。Bill Gates和Mark Zuckerburg的解释可以很好的说明这件事。
+条件和循环是实现一个程序逻辑的必备要素。条件和循环非常重要，Bill Gates和Mark Zuckerburg的解释可以很好的说明这件事。
+
+https://www.youtube.com/watch?v=mPiGHyIXKtw
+
+https://www.youtube.com/watch?v=m2Ux2PnJe6E
+
+https://www.youtube.com/watch?v=mgooqyWMTxk
 
 ### 条件 (Conditional Statements)
 

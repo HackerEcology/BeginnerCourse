@@ -28,5 +28,6 @@
    * [Real What's Left](forthday/real_whats_left.md)
    * [Task](forthday/task.md)
 * [FifthDay](fifthday/README.md)
-   * [CookieCrush](fifthday/cookiecrush.md)
+   * [CookieCrush Part1](fifthday/cookiecrush.md)
+   * [CookieCrush Part2](fifthday/cookiecrush_part2.md)
 

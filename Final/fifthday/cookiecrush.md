@@ -210,5 +210,21 @@ func shuffle() {
 }
 
 ```
+beginGame通过调用shuffle方法来开始游戏，在shuffle方法里你可以调用Level类的shuffle方法，它会返回一个Cookie的集合
 
+然后在GameViewController的viewDidLoad方法里初始化level和调用beginGame方法
 
+```
+override func viewDidLoad() {
+
+  level = Level()
+  scene.level = level
+  skView.presentScene(scene)
+   ...
+  beginGame()
+}
+
+```
+然后棋盘就出现了！
+
+![](http://cdn3.raywenderlich.com/wp-content/uploads/2014/02/First-cookies.png)

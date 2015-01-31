@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# Task
+=======
 # 第一天的作业
 
 创建一个你自己的作业目录，下面创建一个目录day1，以下的每一个问题是day1目录下的一个子目录。
@@ -37,3 +40,4 @@
 做一个美观可玩的Tic Tac Toe游戏。
 
 (什么是Tic Tac Toe? Google will help you.)
+>>>>>>> e1e480df8599ec765f0bfe4cf06916577b0f8e01

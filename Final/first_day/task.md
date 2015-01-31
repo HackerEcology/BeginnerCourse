@@ -2,6 +2,25 @@
 
 创建一个你自己的作业目录，下面创建一个目录day1，以下的每一个问题是day1目录下的一个子目录。
 
+## 如何提交作业？
+
+课程中所有的作业提交至GitHub Organization:
+
+https://github.com/orgs/HackerEdu/teams/beginnercourseswift
+
+提交app/游戏的规则如下:
+
+1. 每一个项目建立一个新的GitHub repo
+2. 所有repo开源
+3. 每个项目需要一个readme，说明如何运行，以及有什么样的特性
+
+提交练习的规则如下:
+
+1. 每天的所有练习题储存在同一个GitHub repo中
+2. 练习题的答案以文本的形式储存
+3. 源代码储存在Playground文件中，并在每一个练习题的源代码前注明题号。
+
+
 ## 基础语法练习
 
 以下练习请创建一个XCode Playground完成，按照题号在注释中标记。

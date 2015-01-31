@@ -228,3 +228,5 @@ override func viewDidLoad() {
 然后棋盘就出现了！
 
 ![](http://cdn3.raywenderlich.com/wp-content/uploads/2014/02/First-cookies.png)
+
+

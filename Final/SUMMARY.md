@@ -13,7 +13,7 @@
    * [OOP](second/oop.md)
    * [UITableView](second/uitableview.md)
    * [memo](second/memo.md)
-   * [UINavigation](second/basicview.md)
+   * [UINavigationController](second/basicview.md)
    * [UIStoryboardSegue](second/hi.md)
    * [Task](second/task.md)
 * [ThirdDay](thirdday/README.md)

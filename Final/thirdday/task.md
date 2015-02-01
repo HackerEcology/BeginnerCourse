@@ -1,6 +1,10 @@
 # Task
 
 
+学习各类排序算法，评估排序以下两列数的时间。
+
+http://7u2ql1.com1.z0.glb.clouddn.com/beginner_little_shuffle.txt
+http://7u2ql1.com1.z0.glb.clouddn.com/beginner_random.txt
 
 
 ## 挑战: Sort Hero

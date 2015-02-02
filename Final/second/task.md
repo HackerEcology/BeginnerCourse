@@ -13,8 +13,6 @@
 2.了解SpriteKit
     掌握SKNodeSKSpriteNode
 
-
-
 ####现在的备忘录只要退出程序，保存的条目就会消失，你需要使用CoreData做数据缓存，让备忘录在程序退出重新加载的时候找到历史备忘录
 1. 新建一个自己定义的类，包含public 函数和private函数； 在playground内coding， 体现出继承，封装，和多态的特性，并提交报告
 

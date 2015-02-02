@@ -31,8 +31,15 @@
 
 ## 挑战
 
+- 单元格向左滑动删除数据
+    1.点击单元格右边出现一个勾
+    2.让单元格向左滑动可以出现删除按钮，按下删除按钮则此单元格消失
+    3.让单元格可以移动
+- 使用CoreData做数据缓存
+    1.在xcdatamodeld里面新建Memo这个Entity
+    2.重新构建Memo类，让它具有存储在数据库中的功能
+    3.在AddViewController添加存储功能，让WhatsLEFT可以存储Memo到数据库中
+    4.在viewDidLoad里面查找所有备忘录并且加载到tableView中
 
-- 1.使用CoreData做数据缓存
 
 
-- 2.单元格向左滑动删除数据

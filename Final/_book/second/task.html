@@ -4,10 +4,11 @@
     <head>
         
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
         <title>Task | Beginner Course for Hackers</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="generator" content="GitBook 1.5.0">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,7 +16,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
-    
+        
     
     
     <link rel="next" href="../thirdday/README.html" />
@@ -33,7 +34,7 @@
 
 
         
-    <div class="book"  data-level="2.6" data-basepath=".." data-revision="1422844725018">
+    <div class="book" data-level="2.6" data-basepath=".." data-revision="1422881649990">
     
 
 <div class="book-summary">
@@ -669,7 +670,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_137">
+                    <section class="normal" id="section-gitbook_24">
                     
                         <h1 id="task">Task</h1>
 <p>1.现在的WhatsLEFT只能显示已经存在的数据，这显然不够炫酷，你需要为它增加一个添加备忘录的功能,你需要完成下面几件事情</p>
@@ -680,12 +681,9 @@
 -在AddViewController中保存数据
 -在prepareForSegue中传递数据
 -在ViewController中reloadData
-</code></pre><p>2.了解SpriteKit
-    掌握SKNodeSKSpriteNode</p>
-<h1 id="challange">Challange</h1>
-<h4 id="">单元格向左滑动删除数据</h4>
-<h3 id="tableviewcommiteditingstyleforrowatindexpath">你需要调用tableView:commitEditingStyle:forRowAtIndexPath这个方法</h3>
-<h4 id="coredata">现在的备忘录只要退出程序，保存的条目就会消失，你需要使用CoreData做数据缓存，让备忘录在程序退出重新加载的时候找到历史备忘录</h4>
+</code></pre><p>2.了解SpriteKit,掌握SKNode,SKSpriteNode的常用初始化方法</p>
+<p>  了解SKScene, SKView</p>
+<p>  了解SKAction的常用方法</p>
 <ol>
 <li><p>新建一个自己定义的类，包含public 函数和private函数； 在playground内coding， 体现出继承，封装，和多态的特性，并提交报告</p>
 </li>
@@ -699,12 +697,20 @@
 </li>
 </ol>
 <h2 id="">挑战</h2>
-<ul>
-<li>1.使用CoreData做数据缓存</li>
-</ul>
-<ul>
-<li>2.单元格向左滑动删除数据</li>
-</ul>
+<h5 id="uitableview">UITableView的高级功能</h5>
+<pre><code>1.点击单元格右边出现一个勾
+2.让单元格向左滑动可以出现删除按钮，按下删除按钮则此单元格消失,
+(你需要调用tableView:commitEditingStyle:forRowAtIndexPath这个方法)
+3.让单元格可以移动
+</code></pre><h5 id="coredata">现在的备忘录只要退出程序，保存的条目就会消失，你需要使用CoreData做数据缓存，让备忘录在程序退出重新加载的时候找到历史备忘录</h5>
+<pre><code>1.在xcdatamodeld里面新建Memo这个Entity
+
+2.重新构建Memo类，让它具有存储在数据库中的功能
+
+3.在AddViewController添加存储功能，让WhatsLEFT可以存储Memo到数据库中
+
+4.在viewDidLoad里面查找所有备忘录并且加载到tableView中
+</code></pre><h5 id="spritekit">了解SpriteKit的物理引擎，让小球模拟自由落下的运动</h5>
 
                     
                     </section>

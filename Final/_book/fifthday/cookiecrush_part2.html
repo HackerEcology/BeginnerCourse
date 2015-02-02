@@ -4,10 +4,11 @@
     <head>
         
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
         <title>CookieCrush Part2 | Beginner Course for Hackers</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="generator" content="GitBook 1.5.0">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,7 +16,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
-    
+        
     
     
     <link rel="next" href="../fifthday/53_cookiecrush_part3.html" />
@@ -33,7 +34,7 @@
 
 
         
-    <div class="book"  data-level="5.2" data-basepath=".." data-revision="1422844725018">
+    <div class="book" data-level="5.2" data-basepath=".." data-revision="1422881649990">
     
 
 <div class="book-summary">
@@ -669,7 +670,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_118">
+                    <section class="normal" id="section-gitbook_5">
                     
                         <h1 id="json">通过加载JSON文件来配置不同等级</h1>
 <p>打开Level_1.json，你可以发现它是这样的</p>
@@ -760,6 +761,16 @@ swipeFromRow = nil
 <p>然后判断这个行和列，看它们是不是在9*9的棋盘里面，如果不是，就结束方法。</p>
 <p>接下来去检查以确保在棋盘中是否真正有Cookie，这在有一些沟槽的地方会很有用</p>
 <p>最后我们打印一句话来显示这个移动从哪个Cookie来到哪个Cookie</p>
+<p>接下来我们要实现touchesEnded和touchesCancelled,touchesEnded会在玩家抬起手指的时候被调用而touchesCancelled会在触摸被打断(例如你在触摸的时候这时来了一个电话)的时候调用</p>
+<pre><code>override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+  swipeFromColumn = nil
+  swipeFromRow = nil
+}
+
+override func touchesCancelled(touches: NSSet, withEvent event: UIEvent) {
+  touchesEnded(touches, withEvent: event)
+}
+</code></pre><p>在touchesEnded方法中你要重置swipeFromColumn和swipeFromRow为nil</p>
 
                     
                     </section>

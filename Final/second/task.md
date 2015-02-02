@@ -10,10 +10,13 @@
     -在prepareForSegue中传递数据
     -在ViewController中reloadData
 
-2.了解SpriteKit
-    掌握SKNodeSKSpriteNode
+2.了解SpriteKit,掌握SKNode,SKSpriteNode的常用初始化方法
 
-####现在的备忘录只要退出程序，保存的条目就会消失，你需要使用CoreData做数据缓存，让备忘录在程序退出重新加载的时候找到历史备忘录
+
+  了解SKScene, SKView
+
+  了解SKAction的常用方法
+
 1. 新建一个自己定义的类，包含public 函数和private函数； 在playground内coding， 体现出继承，封装，和多态的特性，并提交报告
 
 2. 现在的WhatsLEFT只能显示已经存在的数据，这显然不够炫酷，你需要为它增加一个添加备忘录的功能。
@@ -27,16 +30,21 @@
 
 ## 挑战
 
-- 单元格向左滑动删除数据
-    你需要调用tableView:commitEditingStyle:forRowAtIndexPath这个方法
+#####UITableView的高级功能
     1.点击单元格右边出现一个勾
-    2.让单元格向左滑动可以出现删除按钮，按下删除按钮则此单元格消失
+    2.让单元格向左滑动可以出现删除按钮，按下删除按钮则此单元格消失,
+    (你需要调用tableView:commitEditingStyle:forRowAtIndexPath这个方法)
     3.让单元格可以移动
-- 使用CoreData做数据缓存
+
+#####现在的备忘录只要退出程序，保存的条目就会消失，你需要使用CoreData做数据缓存，让备忘录在程序退出重新加载的时候找到历史备忘录
     1.在xcdatamodeld里面新建Memo这个Entity
+
     2.重新构建Memo类，让它具有存储在数据库中的功能
+
     3.在AddViewController添加存储功能，让WhatsLEFT可以存储Memo到数据库中
+
     4.在viewDidLoad里面查找所有备忘录并且加载到tableView中
 
 
 
+#####了解SpriteKit的物理引擎，让小球模拟自由落下的运动

@@ -19,6 +19,7 @@ func printFirstNumbers(N: Int) {
 }
 printFirstNumbers(3)
 ```
+
 >思考一下，以上程序输出的是
 >
     1

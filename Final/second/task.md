@@ -9,13 +9,11 @@
     -在AddViewController中保存数据
     -在prepareForSegue中传递数据
     -在ViewController中reloadData
+
 2.了解SpriteKit
     掌握SKNodeSKSpriteNode
-#Challange
 
 
-####单元格向左滑动删除数据
-###你需要调用tableView:commitEditingStyle:forRowAtIndexPath这个方法
 
 ####现在的备忘录只要退出程序，保存的条目就会消失，你需要使用CoreData做数据缓存，让备忘录在程序退出重新加载的时候找到历史备忘录
 1. 新建一个自己定义的类，包含public 函数和private函数； 在playground内coding， 体现出继承，封装，和多态的特性，并提交报告
@@ -32,6 +30,7 @@
 ## 挑战
 
 - 单元格向左滑动删除数据
+    你需要调用tableView:commitEditingStyle:forRowAtIndexPath这个方法
     1.点击单元格右边出现一个勾
     2.让单元格向左滑动可以出现删除按钮，按下删除按钮则此单元格消失
     3.让单元格可以移动

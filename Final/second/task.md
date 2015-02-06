@@ -12,6 +12,7 @@
 
 2.了解SpriteKit,掌握SKNode,SKSpriteNode的常用初始化方法
 
+
   了解SKScene, SKView
 
   了解SKAction的常用方法

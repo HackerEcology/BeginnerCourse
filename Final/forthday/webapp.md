@@ -8,7 +8,6 @@
 
 介绍过LeanCloud后，我们会使用LeanCloud制作一个SnapChat应用的克隆。
 
-
 # 制作一个天气信息查询app
 
 制作一个天气信息查询app很简单:
@@ -73,7 +72,7 @@ let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler:
 
 如何处理这些数据？
 
-![day4_weather_code](http://7u2ql1.com1.z0.glb.clouddn.com/beginner_day4_weather_code.png)
+![day4_weather_code](http://7u2ql1.com1.z0.glb.clouddn.com/beginner_day4_weather_code_URLConnection.png)
 
 最后，调用task的resume()方法。
 
@@ -84,17 +83,3 @@ task.resume()
 ## 美化一下
 
 现在你可以按照自己的喜好美化一下你的app，如果你希望app适用与更多的屏幕尺寸，可以添加自动布局。
-
-
-
-
-
-
-
-
-
-
-
-
-
-

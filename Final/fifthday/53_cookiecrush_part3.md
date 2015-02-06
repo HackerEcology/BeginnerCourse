@@ -34,4 +34,6 @@ if let handler = swipeHandler {
 }
 ```
 
+这里用Swap的构造函数生成了一个Swap对象，并把它交给handler处理
 
+GameViewController会去判断是否这个swap是有效的，如果它是有效的，你就需要为转换执行动画了

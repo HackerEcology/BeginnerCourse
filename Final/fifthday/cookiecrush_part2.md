@@ -145,7 +145,7 @@ swipeFromRow = nil
 
 最后设置swipeFromColumn为nil，起到重置下一次滑动的作用。
 
-然后我们来写trySwapHorizontal:vertical的方法,这个方法会在游戏的Model中来Swap Cookie(注意还没有作出动画）
+然后我们来写trySwapHorizontal:vertical的方法
 
 ![](http://7u2osj.com1.z0.glb.clouddn.com/trySwap.png)
 
@@ -171,3 +171,7 @@ override func touchesCancelled(touches: NSSet, withEvent event: UIEvent) {
 ```
 在touchesEnded方法中你要重置swipeFromColumn和swipeFromRow为nil
 
+如果手势被终止了，那就终止这个滑动。
+
+现在你运行这个app，你就会发现有的地方可以滑动，有的地方不能滑动。
+![](http://cdn5.raywenderlich.com/wp-content/uploads/2014/02/Valid-swap.png)

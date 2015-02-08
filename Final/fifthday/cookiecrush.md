@@ -2,6 +2,8 @@
 ###Hey,我们将要制作一个和Candy Crush Saga类似的游戏,也就是糖果传奇，听起来很酷是不是？我们会叫它CookieCrush，这意味着你移动的不再是糖果而是曲奇。听起来更美味了，一起来吧！
 
 # 1.为游戏添加背景
+
+
 在GameScene.swift的初始化函数中添加下面的代码
 ```
     anchorPoint = CGPoint(x: 0.5, y: 0.5)

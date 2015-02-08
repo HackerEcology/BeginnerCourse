@@ -251,32 +251,26 @@ func hasChainAtColumn(column: Int, row: Int) -> Bool {
   return vertLength >= 3
 }
 ```
-链表是连续三个或三个以上相同类型的cookie的行或者列，这种方法可能看起来有点奇怪，那是因为在for-statements有很多内部的逻辑。
+链是连续三个或三个以上相同类型的cookie的行或者列，这种方法可能看起来有点奇怪，那是因为在for-statements有很多内部的逻辑。
 ![](http://cdn1.raywenderlich.com/wp-content/uploads/2014/02/Look-left-right-up-down.png)
 给定一个特定的cookie在一个特定的方格网络内，看这个方法的左边，只要找到相同类型的cookie，他就会增加horzLength，简洁的表达了这行代码的意思。
 
 ```
-or var i = column - 1; i >= 0 && cookies[i, row]?.cookieType == cookieType; --i, ++horzLength { }
+for var i = column - 1; i >= 0 && cookies[i, row]?.cookieType == cookieType; --i, ++horzLength { }
 ```
-这个for循环有一个空的身体。这意味着所有的逻辑发生在其参数。
+
 ```
 for var i = column - 1;  // 从当前cookie的左边开始
 
-  i >= 0 &&                                   // 继续执行知道不是最左边的列
+  i >= 0 &&                                   // 继续执行直到不是最左边的列
   cookies[i, row]?.cookieType == cookieType;  // 同样类型的cookie
 
   --i,                   // 到左边的下一列
   ++horzLength           // 增加长度
   { }                    // 循环里不做任何事
 ```
-您还可以使用一段语句写出来，但是for循环运行你把所有内容都放在一行上面去写。:]有的循环是正常的上下结构；
+下面你可以实现detectPossibleSwaps()
 
-既然你有这个方法，你可以实现detectPossibleSwaps()。这是如何运行在更高级的关卡上的。
-
-它是一个具有行和列的二维网络，只有一个cookie在他旁边进行交换，一次一个。
-如果交换这两个cookie并创建了一个3个的链，将她添加到一个新的交换possibleSwaps中去进行交换。
-然后，它将交换的cookie回复为原来的状态，继续下一个cookie直到可交换为止。
-它将经过上述步骤连续两次，1次检查所有的网格竖直互换一次检测所有的垂直互换。
 
 ```
 func detectPossibleSwaps() {
@@ -294,9 +288,8 @@ func detectPossibleSwaps() {
   possibleSwaps = set
 }
 ```
-这是非常简单的方法：遍历行和列，并对每一个点进行检测，如果有一个cookie可以交换，而不是一个空的网格，他将执行检测的逻辑。最后，这个方法将放进possibleSwaps方法中。
+这是非常简单的方法：遍历行和列，并对每一个点进行检测，如果有一个cookie可以进行swap，且不是一个空的网格，他将执行检测的逻辑。最后，这个方法将放进possibleSwaps方法中。
 
-检测将这两个独立的部分，但是这样是在不同方向上做同样的事情。首先你想交换左右两边的cookie,然后又想交换上下的。记住0行是底部所以你可以定制你的方法。
 
 添加如下代码在这里检测消除逻辑：
 
@@ -366,9 +359,7 @@ func isPossibleSwap(swap: Swap) -> Bool {
   return possibleSwaps.containsElement(swap)
 }
 ```
-这看起来可能交换的设置是否包含了指定的交换对象，但是稍等…当你执行刷帧时，GameScene会创建一个新的交换对象。怎么isPossibleSwap()可能会发现内部的对象列表？它可能有一个交换对象，描述完全相同，但实际实例在内存中是不相同的。
 
-当您运行set.containsElement(object)时，设置他去调用它所包含的对象来判断是否是匹配的对象。因为你已经为交换提供了一个 == 操作符，这个自动运行操作，没事儿，交换对象实际上是不同的实例；只要两个可换的对象类型是相同的就行。
 
 最后在GameViewController.swift 调用，并且添加handleSwipe() 这个方法：
 
@@ -430,4 +421,4 @@ func animateInvalidSwap(swap: Swap, completion: () -> ()) {
 ![](http://cdn3.raywenderlich.com/wp-content/uploads/2014/02/Invalid-swap.gif)
 
 
-完整版教程[这里](http://www.tairan.com/archives/6842)
+员教程[这里](http://www.raywenderlich.com/75270/make-game-like-candy-crush-with-swift-tutorial-part-1)

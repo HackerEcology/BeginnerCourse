@@ -47,5 +47,28 @@ WatchKit Extension里面包含着一些代码，比如说app 启动时要执行�
 
 ## Action & Outlet
 
-打开Interface.storyboard 为Label设置Outlet 为Button设置Action
+打开Interface.storyboard，为Label设置Outlet，名字可以为priceLabel,为Button设置Action为refreshTapped
+
+## 编写WatchKit代码
+
+Starter Project里面有写好的获取比特币价格的代码，我们把它封装成了一个framework，这样就可以在iOS App
+和WatchKit Extension里面同时调用它，非常的方便
+
+为Watch Extension添加BitWatchKit.framework
+
+## tupian
+
+1.在InterfaceController.swift中导入BitWatchKit包
+
+2.声明Tracker类对象和一个记录价格是否更新过的变量
+
+3.在refreshTapped点击事件里面加上请求数据的代码
+
+完成后应该是这样的
+
+## 现在在Watch上运行你的App
+
+怎么看见Apple Watch的屏幕呢？在iOS Simulator\HardWare\External Display选择Apple Watch
+
+
 

@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-level="5.2" data-basepath=".." data-revision="1423273604179">
+    <div class="book" data-level="5.2" data-basepath=".." data-revision="1423735921877">
     
 
 <div class="book-summary">
@@ -755,7 +755,7 @@ swipeFromRow = nil
 <p>下面我们会获你的触摸位置，这会和touchesBegan里面获取位置的方法差不多，然后会计算出在用户手指移动到的行和列。</p>
 <p>然后我们会通过比较移动到的行和列与开始移动的行和列来确定滑动的方向。如果符合滑动的条件的话就调用trySwapHorizontal:vertical方法来准备滑动曲奇！</p>
 <p>最后设置swipeFromColumn为nil，起到重置下一次滑动的作用。</p>
-<p>然后我们来写trySwapHorizontal:vertical的方法,这个方法会在游戏的Model中来Swap Cookie(注意还没有作出动画）</p>
+<p>然后我们来写trySwapHorizontal:vertical的方法</p>
 <p><img src="http://7u2osj.com1.z0.glb.clouddn.com/trySwap.png" alt=""></p>
 <p>为什么这个方法会有个try?因为这时候你只知道玩家滑动的上下左右，但那里有可能没有Cookie，比如在边界的时候，所以你要try一下，trySwapHorizontal:vertical的方法首先会通过传进来的delta值来计算出你要滑动到的行和列。</p>
 <p>然后判断这个行和列，看它们是不是在9*9的棋盘里面，如果不是，就结束方法。</p>
@@ -771,6 +771,9 @@ override func touchesCancelled(touches: NSSet, withEvent event: UIEvent) {
   touchesEnded(touches, withEvent: event)
 }
 </code></pre><p>在touchesEnded方法中你要重置swipeFromColumn和swipeFromRow为nil</p>
+<p>如果手势被终止了，那就终止这个滑动。</p>
+<p>现在你运行这个app，你就会发现有的地方可以滑动，有的地方不能滑动。
+<img src="http://cdn5.raywenderlich.com/wp-content/uploads/2014/02/Valid-swap.png" alt=""></p>
 
                     
                     </section>

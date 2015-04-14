@@ -55,8 +55,9 @@ Starter Project里面有写好的获取比特币价格的代码，我们把它�
 和WatchKit Extension里面同时调用它，非常的方便
 
 为Watch Extension添加BitWatchKit.framework
+![](http://7u2osj.com1.z0.glb.clouddn.com/11_addbitwatchkit.png)
 
-## tupian
+然后要做下面几件事情
 
 1.在InterfaceController.swift中导入BitWatchKit包
 
@@ -66,9 +67,13 @@ Starter Project里面有写好的获取比特币价格的代码，我们把它�
 
 完成后应该是这样的
 
+![](http://7u2osj.com1.z0.glb.clouddn.com/11_wkinterfacecontroller.png)
+
 ## 现在在Watch上运行你的App
 
 怎么看见Apple Watch的屏幕呢？在iOS Simulator\HardWare\External Display选择Apple Watch
 
+现在你就可以在Apple Watch上查看比特币的价格了！
+![](http://7u2osj.com1.z0.glb.clouddn.com/11_watchcomplete.jpg)
 
 

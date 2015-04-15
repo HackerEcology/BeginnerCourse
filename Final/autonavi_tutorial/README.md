@@ -1,6 +1,6 @@
 # AutoNavi Tutorial
 
-注册高德开发者并申请一个apiKey
+#####注册高德开发者并申请一个apiKey
 
 1.访问 http://lbs.amap.com/console/key
 
@@ -18,7 +18,7 @@ Budle Identifier在项目配置页面可以看见
 
 
 
-开发你的第一地图应用
+#开发你的第一地图应用
 
 
 1.使用CocoaPods配置你的工程
@@ -64,16 +64,17 @@ MAMapView
 定义:一个可嵌入的地图对象
 功能:可以用来显示地图和对地图进行操作
 
-头文件引用
+#####头文件引用
 ```import <MAMapKit/MAMapKit.h>```
 
-定义key ```let apikey = ""```
+#####定义key
+```let apikey = ""```
 
-定义mapView变量
+#####定义mapView变量
 ```
 var mapView:MAMapView!
 ```
-mapView变量初始化
+#####mapView变量初始化
 
 ![](http://7u2osj.com1.z0.glb.clouddn.com/12_initmapView.png)
 
@@ -84,7 +85,7 @@ mapView变量初始化
 
 ##3.定位你自己在哪儿
 
-iOS 8系统需在info.plist添加字段
+#####iOS 8系统需在info.plist添加字段
 
 若仅需在用户使用app时定位,添加字段NSLocationWhenInUseUsageDescription
 
@@ -94,11 +95,11 @@ iOS 8系统需在info.plist添加字段
 
 ![](http://7u2osj.com1.z0.glb.clouddn.com/12_addplist.png)
 
-添加定位按钮相应事件
+#####添加定位按钮相应事件
 
 ![](http://7u2osj.com1.z0.glb.clouddn.com/12_locateAction.png)
 
-使用MapView回调方法监听定位模式状态
+#####使用MapView回调方法监听定位模式状态
 
 ![](http://7u2osj.com1.z0.glb.clouddn.com/12_updateStatus.png)
 
@@ -113,19 +114,56 @@ Allow "your_app_name" to Access your location even when you are not using the ap
 
 ![](http://7u2osj.com1.z0.glb.clouddn.com/12_thu_position.PNG)
 
+#####使用mapView回调方法获取当前经纬度
+
+![](http://7u2osj.com1.z0.glb.clouddn.com/12_didUpdateUserLocation1.png)
 
 
+然后就可以在控制台看见更新的位置了！
+
+![](http://7u2osj.com1.z0.glb.clouddn.com/12_showUserLocation.png)
 ##4.显示你所在位置的地址
 
+#####在bridging-Header里面调用Search包头文件
+
+```#import <AMapSearchKit/AMapSearchAPI.h>
+```
+
+#####声明用户经纬度变量、search变量,实现AMapSearchDelegate协议
+
+![](http://7u2osj.com1.z0.glb.clouddn.com/12_addSearchVirable.png)
+
+#####初始化search对象
+![](http://7u2osj.com1.z0.glb.clouddn.com/12_initSearch.png)
+
+
+#####在选中用户位置annotation时发送reGeo请求
+
+#####请求完后把返回的结果显示在屏幕上
+
+*tips:reGeo请求就是经纬度转换为地址 geo请求就是地址转换为经纬度*
+
+![](http://7u2osj.com1.z0.glb.clouddn.com/12_geoRegeo.png)
+
+#####添加MAMapView的回调方法
+
+![](http://7u2osj.com1.z0.glb.clouddn.com/12_didSelectAnnotationView.png)
 
 
 
 
 
+#####添加搜索请求处理完成后的回调
 
+![](http://7u2osj.com1.z0.glb.clouddn.com/12_AMapSearchDelegate.png)
 
+####请求会返回这种格式的数据
 
+![](http://7u2osj.com1.z0.glb.clouddn.com/12_AMapReGeoResponse.png)
 
+#####现在点击小蓝点就可以显示你所在的位置啦！
+
+![](http://7u2osj.com1.z0.glb.clouddn.com/12_showUserLocationInMapView.png)
 
 
 

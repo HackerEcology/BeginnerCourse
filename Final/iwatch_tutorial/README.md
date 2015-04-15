@@ -1,6 +1,6 @@
 # iWatch Tutorial
 
-## 基本的WatchKit代码
+### 基本的WatchKit代码
 
 
 
@@ -41,13 +41,18 @@ WatchKit Extension里面包含着一些代码，比如说app 启动时要执行�
 为label设置一下字体样式
 ![](http://7u2osj.com1.z0.glb.clouddn.com/11_labelSetting.png)
 
-设置Button的Title为Refresh字体16号
+设置Button的Title为Refresh,字体16号
 
 ![](http://7u2osj.com1.z0.glb.clouddn.com/11_looksgood.png)
 
 ## Action & Outlet
 
-打开Interface.storyboard，为Label设置Outlet，名字可以为priceLabel,为Button设置Action为refreshTapped
+打开Interface.storyboard
+
+-为Label设置Outlet，名字可以为priceLabel
+![](http://cdn2.raywenderlich.com/wp-content/uploads/2014/11/watch-outlet.png)
+
+-同样的方法为Button设置Action为refreshTapped
 
 ## 编写WatchKit代码
 
@@ -71,7 +76,11 @@ Starter Project里面有写好的获取比特币价格的代码，我们把它�
 
 ## 现在在Watch上运行你的App
 
-怎么看见Apple Watch的屏幕呢？在iOS Simulator\HardWare\External Display选择Apple Watch
+怎么看见Apple Watch的屏幕呢？
+
+在iOS Simulator\HardWare\External Display
+
+选择Apple Watch
 
 现在你就可以在Apple Watch上查看比特币的价格了！
 ![](http://7u2osj.com1.z0.glb.clouddn.com/11_watchcomplete.jpg)

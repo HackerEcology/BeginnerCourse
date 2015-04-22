@@ -1,4 +1,4 @@
-# shell脚本编程
+for # shell脚本编程
 
 ## 什么是Shell脚本
 ### 示例

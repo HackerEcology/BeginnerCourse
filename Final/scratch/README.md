@@ -1,6 +1,11 @@
-# Scratch
+# Scratch Tutorial
 
-打开Scratch你会发现一只小猫萌萌的站在那里，现在就动动起来把
+####打开Scratch
+你会发现一只小猫萌萌的站在那里
+
+![](http://7u2osj.com1.z0.glb.clouddn.com/scratch_scratch.png)
+
+现在就让它动起来把！
 
 
 ### 1.让小猫移动
@@ -21,27 +26,39 @@
 
 ![](http://7u2osj.com1.z0.glb.clouddn.com/scratch_addmiaocode.png)
 
-3.能用键盘控制小猫
+#### 3.能用键盘控制小猫
+
 现在我们要控制小猫，跟让它叫类似，需要在按下上下左右四个键的时候让它动
 
 ![](http://7u2osj.com1.z0.glb.clouddn.com/scratch_addmovecode.png)
 
 
 
-4.会飞的巫婆
+#### 4.会飞的巫婆
+
 首先添加一个背景
-先点选舞台-->背景-->导入，选取Nature土的图
+
+先点选舞台-->背景-->导入，选取Nature里的图
+
 接下来让我们来新增一个角色吧
+
 点击在文件夹中选择新的角色
+
 1)当按下绿旗开始动作
+
 2)随机移动到x及y(x在-240到240之中随机取个数，y在-180到180之中随机取个数)
+
 3)接下来一直重覆执行(外循环)
+
 4)在-10至10取一个角度，如此一来鱼儿游起来比较逼真
+
 5)重覆执行十次
+
 每次移到十步，遇到边缘就反弹
 
 ![](http://7u2osj.com1.z0.glb.clouddn.com/scratch_wizarrd.png)
-5.碰碰球游戏
+#### 5.碰碰球游戏
+
 现在我们来做一个碰碰球游戏
 
 #### 删除小猫
@@ -67,7 +84,8 @@
 
 #### 为舞台设置边界和颜色
 
-
+可以根据你自己的偏好来设置
+![](http://7u2osj.com1.z0.glb.clouddn.com/scratch_stage.png)
 
 #### 做碰撞检测
 根据碰见不同的色块来判断哪一方得分

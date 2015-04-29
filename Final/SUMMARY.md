@@ -33,4 +33,5 @@
    * [CookieCrush Part3](fifthday/53_cookiecrush_part3.md)
 * [AutoNavi Tutorial](autonavi_tutorial/README.md)
 * [iWatch Tutorial](iwatch_tutorial/README.md)
+* [Scratch](scratch/README.md)
 
